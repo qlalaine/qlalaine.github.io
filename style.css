@@ -1,3 +1,11 @@
+html{
+    padding: 10px
+}
+
 body{
-    background-color: color-mix(in hsl shorter hue, #ff9fc2 percentage, #ca3964 percentage);
+    color: #ca3964
+    font-family: "Courier New", Courier, monospace;
+}
+h1{
+    color:
 }
