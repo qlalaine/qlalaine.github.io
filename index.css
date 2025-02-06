@@ -22,13 +22,24 @@
     transition: ease-in-out transform;
 }
 
+@font-face {
+    font-family: 'RomanceA';
+    src:url('files/fonts/RomanceA.ttf');
+}
+
+.slide{
+    animation: slide 1.3s linear;
+    transition: ease-in-out transform;
+}
+
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'RomanceA', sans-serif;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow-x: hidden;
 }
+
 
 header {
     width: 100%;
