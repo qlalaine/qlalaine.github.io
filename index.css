@@ -62,7 +62,7 @@ header nav ul li {
 
 header nav ul li a {
     
-    color: #555;
+    color: rgb(138, 83, 19);
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
@@ -87,7 +87,7 @@ header nav ul li a:hover {
 }
 
 .hero .overlay {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(146, 84, 13, 0.5);
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0px 10px 30px #e63b93;
