@@ -1,17 +1,41 @@
+
+
+/*Slide In keyframe animation for onload animations*/
+@keyframes slide {
+    0%{
+        transform: translateX(3250px);
+        opacity: 0;
+        scale:0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+        scale:1;
+    }
+}
+
+.slide{
+    animation: slide 1.3s linear;
+    transition: ease-in-out transform;
+}
+
 /* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 header {
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px;
+    background-color: #F5A9D0;
+    padding: 1em 0;
     z-index: 1000;
 }
 
@@ -28,7 +52,8 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #fff;
+    
+    color: #555;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
@@ -44,7 +69,7 @@ main {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
+    height: 90vh;
     background-image: url('background.jpg'); /* Add your background image */
     background-size: cover;
     background-position: center;
@@ -60,6 +85,7 @@ main {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 40px;
     border-radius: 10px;
+    box-shadow: 0px 10px 30px #e63b93;
 }
 
 .hero h1 {
@@ -74,20 +100,22 @@ main {
 
 .hero .btn {
     padding: 15px 30px;
-    background-color: #ff7e5f;
+    background-color: #F5A9D0;
     color: #fff;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     text-decoration: none;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    transition: background-color .8s ease, padding .5s ease-in-out, font-size .6s ease-in-out;
+
 }
 
 .hero .btn:hover {
-    background-color: #feb47b;
+    background-color: #e63b93;
+    padding: 20px 50px;
+    font-size: 1.1em;
 }
-
 /* About Me Section */
 .about {
     padding: 60px 20px;
@@ -176,7 +204,6 @@ main {
 /* Footer */
 footer {
     text-align: center;
-    padding: 20px 0;
     background-color: #333;
     color: #fff;
 }
