@@ -17,11 +17,6 @@
     }
 }
 
-@font-face {
-    font-family: 'RomanceA';
-    src:url('files/fonts/RomanceA.ttf');
-}
-
 .slide{
     animation: slide 1.3s linear;
     transition: ease-in-out transform;
@@ -29,18 +24,16 @@
 
 /* General Styles */
 body {
-    font-family: 'RomanceA', sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 header {
-    position: fixed;
     width: 100%;
-    top: 0;
     background-color: #F5A9D0;
-    padding: 1em 0;
+    padding: .8em 0;
     z-index: 1000;
 }
 
@@ -66,10 +59,6 @@ header nav ul li a {
 
 header nav ul li a:hover {
     color: #f9f9f9;
-}
-
-main {
-    padding-top: 0px; /* To avoid overlap with fixed header */
 }
 
 /* Hero Section */
@@ -121,94 +110,10 @@ main {
     padding: 20px 50px;
     font-size: 1.1em;
 }
-/* About Me Section */
-.about {
-    padding: 60px 20px;
-    text-align: center;
-    background-color: #f4f4f4;
-}
-
-.about h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-/* Portfolio Section */
-.portfolio {
-    padding: 60px 20px;
-    background-color: #fff;
-    text-align: center;
-}
-
-.portfolio h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.portfolio-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.portfolio-item {
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 8px;
-    width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.portfolio-item img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-/* Contact Section */
-.contact {
-    padding: 60px 20px;
-    background-color: #f4f4f4;
-    text-align: center;
-}
-
-.contact h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.contact form {
-    max-width: 500px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.contact input, .contact textarea {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    width: 100%;
-}
-
-.contact button {
-    padding: 10px 20px;
-    background-color: #ff7e5f;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.contact button:hover {
-    background-color: #feb47b;
-}
-
 /* Footer */
 footer {
     text-align: center;
-    background-color: #333;
+    background-color: #e63b93;
     color: #fff;
+    padding: .4em;
 }
