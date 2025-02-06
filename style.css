@@ -87,7 +87,7 @@ main {
 }
 
 .hero .overlay {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(117, 71, 14, 0.5);
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0px 10px 30px #e63b93;
