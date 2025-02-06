@@ -69,8 +69,8 @@ main {
 
 /* Hero Section */
 .hero {
-    height: 90vh;
-    background-image: url('background.jpg'); /* Add your background image */
+    height: 100vh;
+    background-image: url('files/hero-background.png'); /* Add your background image */
     background-size: cover;
     background-position: center;
     position: relative;
